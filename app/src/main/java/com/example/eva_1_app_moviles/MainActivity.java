@@ -1,24 +1,52 @@
 package com.example.eva_1_app_moviles;
 
-import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+
+import Modelos.Usuario;
+import Modelos.*; // <-- trae todas las clases.
 
 public class MainActivity extends AppCompatActivity {
+
+    // Declaro variables para guardar elementos Gráficos
+    private EditText username, password;
+    private Button boton;
+
+    Usuario usu = new Usuario(); // esta es mi clase.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        // llamamos por id del elemento gráfico
+        username = findViewById(R.id.etUser); // <-- ese es el id del elemento.
+        password = findViewById(R.id.etPass);
+        boton = findViewById(R.id.btn);
+
+        // Método OnClick (Hice click al botón ...)
+        boton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                String usuario = usu.getNombre().toString(); // guardo el dato de clase en mi variable.
+
+                if(username.getText().equals(usuario) && password.getText().equals(usu.getPasswordHash().toString()))
+                {
+                    // Me desplaza hacia el otro activity. ..
+                    Intent i = new Intent(getBaseContext(), Alumnos_act.class);
+                    startActivity(i); // inicia el activity.
+                }
+
+            }
         });
+
+
     }
 }
