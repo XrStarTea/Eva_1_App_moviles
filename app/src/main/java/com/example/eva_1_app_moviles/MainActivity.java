@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import Modelos.Usuario;
 import Modelos.*; // <-- trae todas las clases.
@@ -29,21 +30,28 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.etPass);
         boton = findViewById(R.id.btn);
 
-        // Método OnClick (Hice click al botón ...)
+        /*Button siguiente = findViewById(R.id.btnSiguiente);
+        siguiente.setOnClickListener(v ->
+                startActivity(new Intent(Alumnos_act.this, Curso_act.class)));
+import android.content.Intent;*/
+
+        // Método OnClick del botón Iniciar Sesión (Login)
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+                String userIngresado = username.getText().toString().trim();
+                String passIngresada = password.getText().toString().trim();
 
-                String usuario = usu.getNombre().toString(); // guardo el dato de clase en mi variable.
+                String usuarioValido = usu.getNombre();
+                String passValida = usu.getPasswordHash();
 
-                if(username.getText().equals(usuario) && password.getText().equals(usu.getPasswordHash().toString()))
-                {
-                    // Me desplaza hacia el otro activity. ..
-                    Intent i = new Intent(getBaseContext(), Alumnos_act.class);
-                    startActivity(i); // inicia el activity.
+                if (userIngresado.equals(usuarioValido) && passIngresada.equals(passValida)) {
+                    Intent intent = new Intent(MainActivity.this, Alumnos_act.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(MainActivity.this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
 

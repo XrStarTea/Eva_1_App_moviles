@@ -1,7 +1,5 @@
 package Modelos;
 
-import java.util.Date;
-
 public class Alumno {
     private int id_Alumno;
     private String matricula;

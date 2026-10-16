@@ -12,7 +12,7 @@ public class Usuario {
 
     // Constructor por defecto con datos de ejemplo
     public Usuario() {
-        this.id = 1;
+        this.id_Usuario = 1;
         this.nombre = "Usuario1";
         this.email = "Usuario1@mail.com";
         this.passwordHash = "Usuario1122";
