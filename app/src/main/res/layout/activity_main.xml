@@ -23,10 +23,10 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="319dp"
-                android:layout_height="171dp"
-                android:layout_marginTop="16dp"
+                android:layout_width="464dp"
+                android:layout_height="230dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.294"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/background" />

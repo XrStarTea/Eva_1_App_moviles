@@ -30,12 +30,7 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.etPass);
         boton = findViewById(R.id.btn);
 
-        /*Button siguiente = findViewById(R.id.btnSiguiente);
-        siguiente.setOnClickListener(v ->
-                startActivity(new Intent(Alumnos_act.this, Curso_act.class)));
-import android.content.Intent;*/
-
-        // Método OnClick del botón Iniciar Sesión (Login)
+        // Metodo OnClick del botón Iniciar Sesión (Login)
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,7 +42,7 @@ import android.content.Intent;*/
                 String passValida = usu.getPasswordHash();
 
                 if (userIngresado.equals(usuarioValido) && passIngresada.equals(passValida)) {
-                    Intent intent = new Intent(MainActivity.this, Alumnos_act.class);
+                    Intent intent = new Intent(MainActivity.this, MenuActivity.class);
                     startActivity(intent);
                 } else {
                     Toast.makeText(MainActivity.this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();

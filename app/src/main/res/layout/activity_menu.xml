@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MenuActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="392dp"
+        android:layout_height="697dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="#733F51B5"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Cartas"
+                android:layout_width="194dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="-150dp"
+                android:layout_marginTop="425dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintStart_toEndOf="@+id/Cartas"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:background="#5582EF"
+                        android:text="Nota"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="34sp" />
+
+                    <TextView
+                        android:id="@+id/NCalificacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Calificacion"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/NFechaEntrega"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha Entrega"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/NComentario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Comentario"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Cartas"
+                android:layout_width="194dp"
+                android:layout_height="185dp"
+                android:layout_marginTop="416dp"
+                android:layout_marginEnd="180dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_revelar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:background="#5582EF"
+                        android:text="Tarea"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="34sp" />
+
+                    <TextView
+                        android:id="@+id/TTitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Titulo"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/TDescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Descripcion"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/TFechaLimite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha Limite"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/TPuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Puntos"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Cartas"
+                android:layout_width="194dp"
+                android:layout_height="185dp"
+                android:layout_marginStart="-150dp"
+                android:layout_marginTop="225dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintStart_toEndOf="@+id/Cartas"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:background="#5582EF"
+                        android:text="Curso"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="34sp" />
+
+                    <TextView
+                        android:id="@+id/CNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/CProfesorId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profesor ID"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/CHorario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Horario"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Cartas"
+                android:layout_width="194dp"
+                android:layout_height="185dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="180dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_revelar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:background="#5582EF"
+                        android:text="Alumno"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="34sp" />
+
+                    <TextView
+                        android:id="@+id/AMatricula"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Matricula"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/ACarrera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Carrera"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/APromedio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Promedio"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/ASemestre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Semestre"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_revelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Revelar Datos"
+                android:textColorLink="#88DAF6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Cartas"
+                android:layout_width="324dp"
+                android:layout_height="153dp"
+                android:layout_marginStart="102dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="102dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="61dp"
+                        android:background="#5582EF"
+                        android:text="Usuario"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="34sp" />
+
+                    <TextView
+                        android:id="@+id/UNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/UEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/UFechaRegistro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha de Registro"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_volver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="57dp"
+                android:layout_marginBottom="18dp"
+                android:text="Volver"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
