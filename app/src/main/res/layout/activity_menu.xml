@@ -9,7 +9,7 @@
     tools:context=".MenuActivity">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
+        android:id="@+id/cardVis"
         android:layout_width="392dp"
         android:layout_height="697dp"
         android:layout_marginStart="50dp"
@@ -29,7 +29,7 @@
             android:layout_height="match_parent">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/Cartas"
+                android:id="@+id/Notas"
                 android:layout_width="194dp"
                 android:layout_height="185dp"
                 android:layout_marginStart="-150dp"
@@ -44,7 +44,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/ooooo"
                         android:layout_width="match_parent"
                         android:layout_height="61dp"
                         android:background="#5582EF"
@@ -78,7 +78,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/Cartas"
+                android:id="@+id/Tarea"
                 android:layout_width="194dp"
                 android:layout_height="185dp"
                 android:layout_marginTop="416dp"
@@ -95,7 +95,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/iiii"
                         android:layout_width="match_parent"
                         android:layout_height="61dp"
                         android:background="#5582EF"
@@ -136,7 +136,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/Cartas"
+                android:id="@+id/Curso"
                 android:layout_width="194dp"
                 android:layout_height="185dp"
                 android:layout_marginStart="-150dp"
@@ -151,7 +151,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/eeeee"
                         android:layout_width="match_parent"
                         android:layout_height="61dp"
                         android:background="#5582EF"
@@ -185,7 +185,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/Cartas"
+                android:id="@+id/Alumno"
                 android:layout_width="194dp"
                 android:layout_height="185dp"
                 android:layout_marginTop="16dp"
@@ -202,7 +202,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/ea"
                         android:layout_width="match_parent"
                         android:layout_height="61dp"
                         android:background="#5582EF"
